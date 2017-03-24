@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`arbitrary options on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "loader": "ts-loader",
+        "options": Object {
+          "appendTsSuffixTo": Array [
+            /\\\\\\.vue\\$/,
+          ],
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".ts",
+    ],
+  },
+}
+`;
+
+exports[`arbitrary options on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "loader": "ts-loader",
+        "options": Object {
+          "appendTsSuffixTo": Array [
+            /\\\\\\.vue\\$/,
+          ],
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".ts",
+    ],
+  },
+}
+`;
+
+exports[`default options on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "loader": "ts-loader",
+        "options": Object {},
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".ts",
+    ],
+  },
+}
+`;
+
+exports[`default options on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "loader": "ts-loader",
+        "options": Object {},
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".ts",
+    ],
+  },
+}
+`;

@@ -1,0 +1,717 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customize css loader on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "loaders": Object {
+      "css": "sass-loader",
+    },
+  },
+}
+`;
+
+exports[`customize css loader on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "loaders": Object {
+            "css": "sass-loader",
+          },
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`customize css using less with extract on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "loaders": Object {
+      "css": Object {
+        "args": Array [
+          "less-loader",
+        ],
+        "extractTextPluginMock": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`customize css using less with extract on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "loaders": Object {
+            "css": Object {
+              "args": Array [
+                Object {
+                  "fallback": "vue-style-loader",
+                  "use": "less-loader",
+                },
+              ],
+              "extractTextPluginMock": true,
+            },
+          },
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`customize css using sass with extract on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "loaders": Object {
+      "css": Object {
+        "args": Array [
+          "sass-loader",
+        ],
+        "extractTextPluginMock": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`customize css using sass with extract on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "loaders": Object {
+            "css": Object {
+              "args": Array [
+                Object {
+                  "fallback": "vue-style-loader",
+                  "use": "sass-loader",
+                },
+              ],
+              "extractTextPluginMock": true,
+            },
+          },
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`customize css using stylus with extract on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "loaders": Object {
+      "css": Object {
+        "args": Array [
+          "stylus-loader",
+        ],
+        "extractTextPluginMock": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`customize css using stylus with extract on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "loaders": Object {
+            "css": Object {
+              "args": Array [
+                Object {
+                  "fallback": "vue-style-loader",
+                  "use": "stylus-loader",
+                },
+              ],
+              "extractTextPluginMock": true,
+            },
+          },
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`customize css with extract on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "loaders": Object {
+      "css": Object {
+        "args": Array [
+          "css-loader",
+        ],
+        "extractTextPluginMock": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`customize css with extract on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "loaders": Object {
+            "css": Object {
+              "args": Array [
+                Object {
+                  "fallback": "vue-style-loader",
+                  "use": "css-loader",
+                },
+              ],
+              "extractTextPluginMock": true,
+            },
+          },
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`customize js loader on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "loaders": Object {
+      "js": "ts-loader",
+    },
+  },
+}
+`;
+
+exports[`customize js loader on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "loaders": Object {
+            "js": "ts-loader",
+          },
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`customize less with extract on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "loaders": Object {
+      "less": Object {
+        "args": Array [
+          "less-loader",
+        ],
+        "extractTextPluginMock": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`customize less with extract on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "loaders": Object {
+            "less": Object {
+              "args": Array [
+                Object {
+                  "fallback": "vue-style-loader",
+                  "use": "less-loader",
+                },
+              ],
+              "extractTextPluginMock": true,
+            },
+          },
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`customize sass with extract on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "loaders": Object {
+      "sass": Object {
+        "args": Array [
+          "sass-loader",
+        ],
+        "extractTextPluginMock": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`customize sass with extract on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "loaders": Object {
+            "sass": Object {
+              "args": Array [
+                Object {
+                  "fallback": "vue-style-loader",
+                  "use": "sass-loader",
+                },
+              ],
+              "extractTextPluginMock": true,
+            },
+          },
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`customize stylus with extract on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "loaders": Object {
+      "stylus": Object {
+        "args": Array [
+          "stylus-loader",
+        ],
+        "extractTextPluginMock": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`customize stylus with extract on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "loaders": Object {
+            "stylus": Object {
+              "args": Array [
+                Object {
+                  "fallback": "vue-style-loader",
+                  "use": "stylus-loader",
+                },
+              ],
+              "extractTextPluginMock": true,
+            },
+          },
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`default options on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {},
+}
+`;
+
+exports[`default options on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {},
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`extract css without loader on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "loaders": Object {
+      "css": Object {
+        "args": Array [
+          "css-loader",
+        ],
+        "extractTextPluginMock": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`extract css without loader on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "loaders": Object {
+            "css": Object {
+              "args": Array [
+                Object {
+                  "fallback": "vue-style-loader",
+                  "use": "css-loader",
+                },
+              ],
+              "extractTextPluginMock": true,
+            },
+          },
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`include arbitrary options on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "esModule": true,
+  },
+}
+`;
+
+exports[`include arbitrary options on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "esModule": true,
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
