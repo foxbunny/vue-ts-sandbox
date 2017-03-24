@@ -3,5 +3,8 @@
 /yarn.lock
 /yarn-error.log
 
+# TypeScript
+/typings
+
 # Build artifacts
 /build
