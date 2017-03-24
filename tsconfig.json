@@ -9,8 +9,6 @@
     "moduleResolution": "node",
     "isolatedModules": false,
     "experimentalDecorators": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
     "strictNullChecks": true,
     "removeComments": true,
     "suppressImplicitAnyIndexErrors": true,
