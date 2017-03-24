@@ -25,6 +25,7 @@
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
+    "d3": "^4.7.4",
     "vue": "^2.2.4",
     "vue-class-component": "^5.0.0",
     "webpack": "^2.3.1"
