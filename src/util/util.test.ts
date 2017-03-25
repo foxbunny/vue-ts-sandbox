@@ -170,3 +170,13 @@ test('util.merge will give precedence to first object when props conflict', () =
   expect(util.merge(o1, o2)).toEqual({foo: 12, bar: 10, baz: 14})
   expect(util.merge(o2, o1)).toEqual({foo: 12, bar: 12, baz: 14})
 })
+
+test('util.prop will return an object property', () => {
+  const o = {foo: 12}
+  expect(util.prop('foo', o)).toBe(12)
+})
+
+test('util.prop will return undefined for missing props', () => {
+  const o = {foo: 12}
+  expect(util.prop('bar', o)).toBe(undefined)
+})

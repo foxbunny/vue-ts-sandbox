@@ -13,6 +13,7 @@ import patch from './patch'
 import curriedN from './curriedN'
 import curried from './curried'
 import merge from './merge'
+import prop from './prop'
 
 export {
   init,
@@ -29,5 +30,6 @@ export {
   patch,
   curriedN,
   curried,
-  merge
+  merge,
+  prop
 }
