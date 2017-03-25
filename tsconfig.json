@@ -9,6 +9,7 @@
     "moduleResolution": "node",
     "isolatedModules": false,
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
