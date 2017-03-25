@@ -30,7 +30,7 @@
     "@types/d3": "^4.7.0",
     "d3": "4.7.0",
     "vue": "^2.2.4",
-    "vue-class-component": "^5.0.0",
+    "vue-property-decorator": "^4.0.0",
     "webpack": "^2.3.1"
   },
   "jest": {
