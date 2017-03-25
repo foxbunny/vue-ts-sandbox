@@ -10,6 +10,7 @@
     "start": "webpack-dev-server"
   },
   "devDependencies": {
+    "@types/d3": "^4.7.0",
     "@types/jest": "^19.2.2",
     "@webpack-blocks/dev-server2": "^0.4.0",
     "@webpack-blocks/webpack2": "^0.4.0",
@@ -27,7 +28,6 @@
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
-    "@types/d3": "^4.7.0",
     "d3": "4.7.0",
     "vue": "^2.2.4",
     "vue-property-decorator": "^4.0.0",
