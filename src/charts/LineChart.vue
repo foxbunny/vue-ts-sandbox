@@ -1,5 +1,5 @@
 <template>
-  <svg class="line-chart" ref="root"></svg>
+<svg class="line-chart" ref="root"></svg>
 </template>
 
 <script lang="ts">
@@ -15,11 +15,11 @@ export default class LineChart extends Vue {
 
   // Props
 
-  // Width of the entire chart
-  @Prop({ default: 420 })
+  // Width of the view box
+  @Prop({ default: 400 })
   width: number
 
-  // Height of the entire chart
+  // Height of the view box
   @Prop({ default: 200 })
   height: number
 
@@ -45,29 +45,27 @@ export default class LineChart extends Vue {
   renderChart() {
     const y = d3.scaleLinear()
       .domain([0, d3.max(flatten(prop('vals'), this.series))])
-      .range([100, 0])
+      .range([this.height, 0])
 
     const x = d3.scaleLinear()
-      .domain([0, d3.max(flatten(path(['vals', 'length']), this.series))])
-      .range([0, 100])
+      .domain([0, d3.max(flatten(path(['vals', 'length']), this.series)) - 1])
+      .range([0, this.width])
+
+    const lineOf = d3.line<number>()
+      .x((d: number, i: number) => x(i))
+      .y((d: number) => y(d))
 
     d3.select(this.$refs.root as Element)
-        .attr('width', this.width)
-        .attr('height', this.height)
+        .attr('viewBox', `0,0,${this.width},${this.height}`)
+        .attr('preserveAspectRatio', 'none')
         // Create a group for the entire series
-        .selectAll('g')
+        .selectAll('path')
         .data(this.series)
-      .enter().append('g')
-        // Create a subgroup for each array in the series
-        .selectAll('line')
-        .data((d: ChartData): Array<LineData> => d3.pairs(d.vals).map(pairToCoord(d.color)))
-      .enter().append('line')
-        .attr('x1', (d: LineData) => `${x(d.xL)}%`)
-        .attr('x2', (d: LineData) => `${x(d.xR)}%`)
-        .attr('y1', (d: LineData) => `${y(d.yL)}%`)
-        .attr('y2', (d: LineData) => `${y(d.yR)}%`)
-        .attr('stroke', (d: LineData) => d.color)
-        .style('stroke-width', 2)
+      .enter().append('path')
+        .attr('d', (d: ChartData) => lineOf(d.vals))
+        .attr('stroke-width', 2)
+        .attr('stroke', (d: ChartData) => d.color)
+        .attr('fill', 'none')
       .exit().remove()
   }
 }
@@ -78,27 +76,7 @@ function flatten(pred: Function, series: Array<ChartData>): Array<any> {
   return series.reduce((acc: Array<number>, s: ChartData) => acc.concat(pred(s)), [])
 }
 
-function pairToCoord(color: string) {
-  return function(pair: Array<number>, i: number): LineData {
-    return {
-      xL: i,
-      xR: i + 1,
-      yL: pair[0],
-      yR: pair[1],
-      color
-    }
-  }
-}
-
 // Type declarations
-
-interface LineData {
-  xL: number
-  xR: number
-  yL: number
-  yR: number
-  color: string
-}
 
 export interface ChartData {
   color: string
