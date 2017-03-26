@@ -58,7 +58,6 @@ export default class LineChart extends Vue {
     d3.select(this.$refs.root as Element)
         .attr('viewBox', `0,0,${this.width},${this.height}`)
         .attr('preserveAspectRatio', 'none')
-        // Create a group for the entire series
         .selectAll('path')
         .data(this.series)
       .enter().append('path')
