@@ -6,13 +6,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Component from 'vue-class-component'
+import Vue from "vue"
+import {Component} from "vue-property-decorator"
 
-@Component({})
+@Component
 export default class Hello extends Vue {
   data() {
-    return { name: 'World' }
+    return {name: "World"}
   }
 }
 </script>
