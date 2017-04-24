@@ -26,7 +26,7 @@ module.exports = function(config) {
     colors: true,
 
     // Test framework configuration
-    frameworks: ['jasmine'],
+    frameworks: ['mocha'],
 
     // Runner configuration
     port: 9876,

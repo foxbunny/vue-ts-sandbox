@@ -1,5 +1,7 @@
 import Vue from "vue";
 import Hello from "./Hello.vue";
+import {expect} from "chai";
+
 
 describe("Hello.vue", () => {
   it("should render without exception", () => {
@@ -9,7 +11,7 @@ describe("Hello.vue", () => {
         return h(Hello);
       },
     });
-    expect(vm.$el.innerHTML).toBe(
+    expect(vm.$el.innerHTML).to.be(
       '<p data-v-254f5129="">Hello, World!</p> <input data-v-254f5129="">'
     );
   });
@@ -28,7 +30,7 @@ describe("Hello.vue", () => {
 
     // After events settle.
     Vue.nextTick(() => {
-      expect(vm.$el.innerHTML).toBe(
+      expect(vm.$el.innerHTML).to.be(
         '<p data-v-254f5129="">Hello, Foo!</p> <input data-v-254f5129="">'
       )
       done();
@@ -50,7 +52,7 @@ describe("Hello.vue", () => {
 
     // After events settle.
     Vue.nextTick(() => {
-      expect(vm.$el.innerHTML).toBe(
+      expect(vm.$el.innerHTML).to.be(
         '<p data-v-254f5129="">Hello, World!</p> <input data-v-254f5129="">'
       )
       done();
