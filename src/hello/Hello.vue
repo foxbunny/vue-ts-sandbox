@@ -1,21 +1,9 @@
 <template>
   <div class="hello">
-    <p>Hello, {{ name || 'World' }}!</p>
-    <input v-model="name">
+    <p>Hello, {{ displayName }}!</p>
+    <input :value="name" @input="updateName">
   </div>
 </template>
-
-<script lang="ts">
-import Vue from "vue"
-import {Component} from "vue-property-decorator"
-
-@Component
-export default class Hello extends Vue {
-  data() {
-    return {name: "World"}
-  }
-}
-</script>
 
 <style scoped>
   .hello {
@@ -23,3 +11,5 @@ export default class Hello extends Vue {
     font-family: sans-serif;
   }
 </style>
+
+<script lang="ts" src="./Hello.ts"></script>

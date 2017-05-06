@@ -1,7 +1,16 @@
 import Vue from "vue";
 import Hello from "./Hello.vue";
+import HelloClass from "./Hello";
 
 describe("Hello.vue", () => {
+  it("should update the name", () => {
+    const vm = new HelloClass();
+    expect(vm.name).toBe("World");
+    const ev: EventWithTarget = {target: {value: "Foo"}};
+    vm.updateName(ev);
+    expect(vm.name).toBe("Foo");
+  });
+
   it("should render without exception", () => {
     const vm = new Vue({
       el: document.createElement("div"),
@@ -23,6 +32,9 @@ describe("Hello.vue", () => {
     });
 
     const input = vm.$el.querySelector("input");
+    if (input === null) {
+      throw new Error("Something went wrong");
+    }
     input.value = "Foo";
     input.dispatchEvent(new Event("input"));
 
@@ -45,6 +57,9 @@ describe("Hello.vue", () => {
     });
 
     const input = vm.$el.querySelector("input");
+    if (input === null) {
+      throw new Error("Something went wrong");
+    }
     input.value = "";
     input.dispatchEvent(new Event("input"));
 
