@@ -5,21 +5,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-import Component from 'vue-class-component'
-
-@Component({})
-export default class Hello extends Vue {
-  data() {
-    return { name: 'World' }
-  }
-}
-</script>
-
 <style scoped>
   .hello {
     font-size: 20px;
     font-family: sans-serif;
   }
 </style>
+
+<script lang="ts" src="./Hello.ts"></script>
