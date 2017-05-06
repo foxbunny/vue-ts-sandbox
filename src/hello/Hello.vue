@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <p>Hello, {{ name || 'World' }}!</p>
+    <p>Hello, {{ displayName }}!</p>
     <input v-model="name">
   </div>
 </template>
