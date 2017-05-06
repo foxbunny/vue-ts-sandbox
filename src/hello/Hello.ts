@@ -8,4 +8,9 @@ export default class Hello extends Vue {
   get displayName() {
     return this.name || "World";
   }
+
+  updateName(e: Event) {
+    const target = e.target as HTMLInputElement;
+    this.name = target.value;
+  }
 }

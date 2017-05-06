@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <p>Hello, {{ displayName }}!</p>
-    <input v-model="name">
+    <input :value="name" @input="updateName">
   </div>
 </template>
 
