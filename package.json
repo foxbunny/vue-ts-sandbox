@@ -22,6 +22,9 @@
     "typescript": "^2.2.1",
     "vue-loader": "^11.3.1",
     "vue-template-compiler": "^2.2.4",
+    "webpack-blocks": "^1.0.0-alpha",
+    "webpack-blocks-ts": "file:///C:\\Code\\webpack-blocks-ts",
+    "webpack-blocks-vue": "^1.0.1",
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {

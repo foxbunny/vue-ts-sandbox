@@ -1,18 +1,18 @@
 'use strict'
 
 const {
+  webpack,
   createConfig,
+  devServer,
   defineConstants,
   env,
   entryPoint,
   setOutput,
   sourceMaps,
   addPlugins
-} = require('@webpack-blocks/webpack2')
-const webpack = require('webpack')
-const devServer = require('@webpack-blocks/dev-server2')
-const ts = require('./config/ts-block')
-const vue = require('./config/vue-block')
+} = require('webpack-blocks')
+const ts = require('webpack-blocks-ts')
+const vue = require('webpack-blocks-vue')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const autoprefixer = require('autoprefixer')
